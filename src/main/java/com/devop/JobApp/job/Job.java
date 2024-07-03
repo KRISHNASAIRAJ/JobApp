@@ -9,14 +9,14 @@ public class Job {
     // it is primary key
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String title;
-    private String description;
-    private String minSalary;
-    private String maxSalary;
-    private String location;
+    private Long id;//Job I'd which is automatically generated
+    private String title;//Job Title
+    private String description;//Job Description
+    private String minSalary;//Minimum Salary
+    private String maxSalary;//Maximum Salary
+    private String location;//Job Location
 
-    @ManyToOne
+    @ManyToOne//Many Jobs Are Mapped To One Company
     private Company company;
 
     public Company getCompany() {
@@ -26,8 +26,7 @@ public class Job {
     public void setCompany(Company company) {
         this.company = company;
     }
-
-
+    //Parameterized Constructor
     public Job(Long id, String title, String description, String minSalary, String maxSalary, String location) {
         this.id = id;
         this.title = title;

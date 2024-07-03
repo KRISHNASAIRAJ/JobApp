@@ -2,7 +2,6 @@ package com.devop.JobApp.reviews.impl;
 import java.util.List;
 
 import com.devop.JobApp.company.Company;
-import com.devop.JobApp.company.CompanyRepository;
 import com.devop.JobApp.company.CompanyService;
 import com.devop.JobApp.reviews.Review;
 import com.devop.JobApp.reviews.ReviewRepository;

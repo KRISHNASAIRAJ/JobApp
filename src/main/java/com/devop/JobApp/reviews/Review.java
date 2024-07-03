@@ -8,13 +8,13 @@ import jakarta.persistence.*;
 public class Review {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String title;
-    private String description;
-    private Double rating;
+    private Long id;//It acts as a primary key in general
+    private String title;//Title of the review
+    private String description;//Review Description
+    private Double rating;//Rating for the company
 
     @JsonIgnore
-    @ManyToOne
+    @ManyToOne//Many Reviews Are Mapped To One Company
     private Company company;
 
     public Company getCompany() {
