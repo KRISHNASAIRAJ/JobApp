@@ -27,9 +27,22 @@ For each module, the following operations are implemented and tested using POSTM
 ## Database
 The application uses an H2 database, which is commonly used for development due to its simplicity and in-memory capabilities. The H2 database also provides a web-based console for easy database management and inspection.
 
+## Docker and PostgreSQL
+The application has been updated to include Docker support with PostgreSQL and pgAdmin. This allows for more robust database management and easier deployment.
+
+### Docker Setup
+The project includes a docker-compose.yaml file to set up the necessary containers for the application, PostgreSQL, and pgAdmin. The Maven Docker plugin is used to build and manage Docker images.
+
+### PostgreSQL
+PostgreSQL is used as the main database for production environments, providing a more scalable and reliable solution compared to the H2 in-memory database.
+
+### pgAdmin
+pgAdmin is included to provide a web-based interface for managing the PostgreSQL database.
+
 ## Prerequisites
 * Java 11 or higher
 * Maven
+* Docker and Docker Compose
 * POSTMAN (for testing API endpoints)
 
 ### Accessing the H2 Database Console
