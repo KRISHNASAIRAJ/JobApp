@@ -6,23 +6,43 @@ Welcome to my Spring Boot Application repository! This is a beginner-level proje
 ## Project Structure
 The project is organized into the following modules:
 
-### Jobs: Handles job-related operations.
-### Companies: Manages company-related operations.
-### Reviews: Manages reviews of jobs and companies.
+### Jobs
+Handles job-related operations.
+
+### Companies
+Manages company-related operations.
+
+### Reviews
+Manages reviews of jobs and companies.
+
 Each module consists of:
 
-### Service Layer: Contains the business logic.
-### Controller Layer: Handles HTTP requests and responses.
-### Repository Layer: Manages database interactions.
+### Service Layer
+Contains the business logic.
+
+### Controller Layer
+Handles HTTP requests and responses.
+
+### Repository Layer
+Manages database interactions.
 
 ## Features
 For each module, the following operations are implemented and tested using POSTMAN:
 
-### Add: Add new records to the database.
-### Delete: Remove existing records from the database.
-### Update: Modify existing records.
-### Fetch All: Retrieve all records from the database.
-### Fetch by ID: Retrieve specific records by their ID.
+### Add
+Add new records to the database.
+
+### Delete
+Remove existing records from the database.
+
+### Update
+Modify existing records.
+
+### Fetch All
+Retrieve all records from the database.
+
+### Fetch by ID
+Retrieve specific records by their ID.
 
 ## Database
 The application uses an H2 database, which is commonly used for development due to its simplicity and in-memory capabilities. The H2 database also provides a web-based console for easy database management and inspection.
@@ -33,11 +53,17 @@ The application has been updated to include Docker support with PostgreSQL and p
 ### Docker Setup
 The project includes a docker-compose.yaml file to set up the necessary containers for the application, PostgreSQL, and pgAdmin. The Maven Docker plugin is used to build and manage Docker images.
 
+![image](https://github.com/KRISHNASAIRAJ/JobApp/assets/90061814/0c617e56-dd25-4e07-ae49-9f2bccbc2b39)
+
+
 ### PostgreSQL
 PostgreSQL is used as the main database for production environments, providing a more scalable and reliable solution compared to the H2 in-memory database.
 
 ### pgAdmin
 pgAdmin is included to provide a web-based interface for managing the PostgreSQL database.
+
+![image](https://github.com/KRISHNASAIRAJ/JobApp/assets/90061814/202182a5-3961-4cab-8566-805676435041)
+
 
 ## Prerequisites
 * Java 11 or higher
@@ -49,19 +75,12 @@ pgAdmin is included to provide a web-based interface for managing the PostgreSQL
 Once the application is running, you can access the H2 database console at:
 http://localhost:8080/h2-console
 
-Testing the API
+## Testing the API
 You can use POSTMAN to test the various endpoints for each module. Below are the endpoints for each module:
+
 ![image](https://github.com/KRISHNASAIRAJ/JobApp/assets/90061814/68199612-c458-480d-b5e4-54523221edc3)
 
-![image](https://github.com/KRISHNASAIRAJ/JobApp/assets/90061814/976d274d-f97c-4fce-9272-69429c14d237)
 
-![image](https://github.com/KRISHNASAIRAJ/JobApp/assets/90061814/c1bba07b-45cd-47f5-95a4-bc3286eace81)
-
-
-## Jobs Module
-### Add Job: POST /jobs
-### Delete Job: DELETE /jobs/{id}
-### Update Job: PUT /jobs/{id}
 ### Fetch All Jobs: GET /jobs
 ### Fetch Job by ID: GET /jobs/{id}
 
